@@ -66,6 +66,8 @@ export default function Hero({
               src={imageUrl}
               alt={imageAlt}
               loading="eager"
+              width={1200}
+              height={600}
               className="mt-8 rounded-lg h-full w-auto max-h-[400px]"
             />
           </div>

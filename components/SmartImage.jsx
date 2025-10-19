@@ -14,39 +14,11 @@ export default function SmartImage({
   className = "",
   ...rest
 }) {
-  const [finalSrc, setFinalSrc] = useState(src);
-
-  useEffect(() => {
-    if (!src) return;
-
-    // Only check jpg/jpeg/png extensions
-    const m = src.match(/\.(jpg|jpeg|png)$/i);
-    if (!m) {
-      setFinalSrc(src);
-      return;
-    }
-
-    const webpSrc = src.replace(/\.(jpg|jpeg|png)$/i, ".webp");
-
-    // Check if webp version exists
-    fetch(webpSrc, { method: "HEAD" })
-      .then((res) => {
-        if (res.ok) {
-          setFinalSrc(webpSrc);
-        } else {
-          setFinalSrc(src);
-        }
-      })
-      .catch(() => {
-        setFinalSrc(src);
-      });
-  }, [src]);
-
   const fetchPriority = loading === "eager" ? "high" : "low";
 
   return (
     <img
-      src={finalSrc}
+      src={src}
       alt={alt}
       loading={loading}
       fetchpriority={fetchPriority}
