@@ -1,5 +1,5 @@
 import { trackCTAClick, getCurrentVariant } from "@/lib/abTestTracking";
-import SmartImage from "@/components/SmartImage";
+import Image from "next/image";
 
 const scrollToSection = (e, href) => {
   e.preventDefault();
@@ -62,12 +62,13 @@ export default function Hero({
         {/* image */}
         {imageUrl && (
           <div className="w-full lg:w-1/2 flex items-center justify-center">
-            <SmartImage
+            <Image
               src={imageUrl}
               alt={imageAlt}
-              loading="eager"
               width={1200}
               height={600}
+              priority
+              sizes="(max-width: 768px) 100vw, 760px"
               className="mt-8 rounded-lg h-full w-auto max-h-[400px]"
             />
           </div>

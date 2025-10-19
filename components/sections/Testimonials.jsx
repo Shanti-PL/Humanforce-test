@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import SmartImage from "@/components/SmartImage";
+import Image from "next/image";
 
 export default function Testimonials({ headline, subhead, items }) {
   const [showAll, setShowAll] = useState(false);
@@ -50,10 +50,12 @@ export default function Testimonials({ headline, subhead, items }) {
                 </div>
                 {/* image */}
                 <div className="flex-1 flex items-end justify-center sm:justify-end pt-2 md:pt-5">
-                  <SmartImage
+                  <Image
                     src={it.image}
                     alt={it.author}
-                    loading="lazy"
+                    width={160}
+                    height={160}
+                    sizes="(max-width: 768px) 100vw, 160px"
                     className="w-full md:w-auto h-auto md:h-full max-h-[120px] xl:max-h-[140px] object-contain"
                   />
                 </div>

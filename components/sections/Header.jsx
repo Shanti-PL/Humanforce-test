@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function Header({ navigation, brand }) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -48,7 +49,14 @@ export default function Header({ navigation, brand }) {
             onClick={(e) => scrollToSection(e, "#hero")}
             className="text-2xl font-bold font-bbh-sans-hegarty text-foreground hover:text-secondary transition-colors"
           >
-            <img src={brand.logo} alt={brand.name} className="w-auto h-10" />
+            <Image
+              src={brand.logo}
+              alt={brand.name}
+              className="w-auto h-10"
+              width={400}
+              height={100}
+              sizes="(max-width: 768px) 100vw, 400px"
+            />
           </a>
 
           {/* Desktop Navigation */}

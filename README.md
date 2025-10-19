@@ -108,13 +108,13 @@ Each section is modular and maps 1-to-1 with its JSON content structure.
 
 ### Performance Features
 
-| Feature                | Implementation                    | Benefit                     |
-| ---------------------- | --------------------------------- | --------------------------- |
-| **Edge Runtime**       | Vercel global edge network        | Ultra-low latency rendering |
-| **Static Caching**     | `revalidate: 60` on JSON fetch    | Reduced server load         |
-| **Image Optimization** | WebP format + lazy loading        | Faster page loads           |
-| **CLS Prevention**     | Fixed aspect ratios & min-heights | Better Core Web Vitals      |
-| **Code Splitting**     | Dynamic imports for A/B test      | Smaller initial bundle      |
+| Feature                | Implementation                        | Benefit                               |
+| ---------------------- | ------------------------------------- | ------------------------------------- |
+| **Edge Runtime**       | Vercel global edge network            | Ultra-low latency rendering           |
+| **Static Caching**     | `revalidate: 60` on JSON fetch        | Reduced server load                   |
+| **Image Optimization** | WebP format + responsive lazy loading | Faster page loads & reduced bandwidth |
+| **CLS Prevention**     | Fixed aspect ratios & min-heights     | Better Core Web Vitals                |
+| **Code Splitting**     | Dynamic imports for A/B test          | Smaller initial bundle                |
 
 ### Accessibility (WCAG 2.1 AA)
 
@@ -177,7 +177,7 @@ trackVariantView("B");
 trackCTAClick("B", "Book a demo");
 ```
 
-**Analytics Integration** (ready for GA4, Mixpanel, etc.):
+**Analytics Integration** (ready for GA4):
 
 ```javascript
 window.gtag("event", "ab_test_cta_click", {
@@ -276,8 +276,7 @@ NEXT_PUBLIC_GA_ID=your_ga_tracking_id
 - [ ] Integration with real CMS (Storyblok, Sanity)
 - [ ] Advanced analytics dashboard for A/B tests
 - [ ] Multi-language support (i18n)
-- [ ] Dark mode toggle
-- [ ] More interactive animations
+- [ ] More interactive animations and micro-interactions
 
 ---
 
@@ -300,4 +299,3 @@ This project is developed for the Humanforce Developer Technical Exercise.
 ## 🤝 Contributing
 
 This is a technical exercise project. For questions or feedback, please reach out to the author.
-# Humanforce-test

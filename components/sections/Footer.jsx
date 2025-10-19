@@ -1,4 +1,4 @@
-import SmartImage from "@/components/SmartImage";
+import Image from "next/image";
 
 export default function Footer({ brand, social, footer }) {
   const currentYear = new Date().getFullYear();
@@ -29,10 +29,13 @@ export default function Footer({ brand, social, footer }) {
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <a href="#">
-              <SmartImage
+              <Image
                 src={brand.logo}
                 alt={brand.name}
                 className="w-auto h-10"
+                width={400}
+                height={100}
+                sizes="(max-width: 768px) 100vw, 400px"
                 loading="lazy"
               />
             </a>
