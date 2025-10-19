@@ -2,7 +2,8 @@
   "brand": {
     "name": "Humanforce",
     "logo": "/images/logo.svg",
-    "logoAlt": "Humanforce Logo"
+    "logoAlt": "Humanforce Logo",
+    "pageUrl": "https://humanforce-test.vercel.app/"
   },
   "navigation": {
     "main": [

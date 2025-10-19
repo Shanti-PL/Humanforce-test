@@ -23,18 +23,20 @@ export default async function RootLayout({ children }) {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://humanforce-test.vercel.app/",
+        item: general.brand.pageUrl,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Workforce Management",
-        item: "https://humanforce-test.vercel.app/",
+        item: general.brand.pageUrl,
       },
     ],
   };
 
   const jsonLdList = [jsonLdWebPage, jsonLdBreadcrumb];
+
+  const canonicalUrl = general.brand.pageUrl;
 
   return (
     <html lang="en">
@@ -43,6 +45,7 @@ export default async function RootLayout({ children }) {
         {meta.description && (
           <meta name="description" content={meta.description} />
         )}
+        <link rel="canonical" href={canonicalUrl} />
         {jsonLdList.map((obj, i) => (
           <script
             key={i}
