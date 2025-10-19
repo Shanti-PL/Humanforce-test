@@ -5,6 +5,7 @@ import { loadContent } from "@/lib/loadContent";
 
 export default async function RootLayout({ children }) {
   const { meta = {} } = await loadContent("landing");
+  const general = await loadContent("general");
 
   const jsonLdWebPage = {
     "@context": "https://schema.org",
