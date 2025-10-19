@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "title": "Humanforce Workforce Management",
+    "description": "Optimise scheduling, time & attendance, and labour costs."
+  },
+  "hero": {
+    "headline": "Schedule smarter. Empower your frontline.",
+    "subhead": "One platform for shift planning, time-tracking and labour optimisation.",
+    "primaryCta": { "label": "Book a demo", "href": "#contact" },
+    "secondaryCta": { "label": "See pricing", "href": "#pricing" },
+    "imageUrl": "/images/hero-image.webp",
+    "imageAlt": "Frontline teams using Humanforce on mobile"
+  },
+  "features": {
+    "headline": "See our features",
+    "subhead": "Our platform helps you manage your workforce smarter.",
+    "items": [
+      {
+        "title": "Smart Rostering",
+        "desc": "Auto-generate rosters with labour targets."
+      },
+      {
+        "title": "Time & Attendance",
+        "desc": "Accurate timesheets with geo-fencing."
+      },
+      { "title": "Compliance", "desc": "Prevent breaches with built-in rules." }
+    ]
+  },
+  "testimonials": {
+    "headline": "What our customers say",
+    "subhead": "Real results from teams like yours.",
+    "items": [
+      {
+        "quote": "Saved 12% in labour costs.",
+        "author": "Ops Director, Hospitality",
+        "image": "/images/doctor.webp"
+      },
+      {
+        "quote": "Scheduling time halved.",
+        "author": "Store Manager, Retail",
+        "image": "/images/store-manager.webp"
+      },
+      {
+        "quote": "Employee satisfaction increased by 25% after implementing Humanforce.",
+        "author": "HR Manager, Healthcare",
+        "image": "/images/hr-manager.webp"
+      },
+      {
+        "quote": "Payroll processing time reduced from 2 days to 2 hours.",
+        "author": "Finance Director, Manufacturing",
+        "image": "/images/cfo.webp"
+      },
+      {
+        "quote": "Compliance issues dropped to zero since implementation.",
+        "author": "Operations Manager, Aged Care",
+        "image": "/images/doctor-2.webp"
+      },
+      {
+        "quote": "Mobile app made scheduling so much easier for our team.",
+        "author": "General Manager, Dealer",
+        "image": "/images/dealer.webp"
+      }
+    ]
+  },
+  "contact": {
+    "headline": "Get in Touch",
+    "subhead": "Ready to transform your workforce management? Let's talk.",
+    "form": {
+      "fields": {
+        "name": {
+          "label": "Name",
+          "placeholder": "Your name",
+          "required": true
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "your@email.com",
+          "required": true
+        },
+        "company": {
+          "label": "Company",
+          "placeholder": "Your company",
+          "required": false
+        },
+        "message": {
+          "label": "Message",
+          "placeholder": "Tell us about your needs...",
+          "required": true
+        }
+      },
+      "submitButton": "Send Message",
+      "successMessage": "Thank you for your message! We'll get back to you soon."
+    },
+    "info": {
+      "email": {
+        "label": "Email",
+        "icon": "mail"
+      },
+      "phone": {
+        "label": "Phone",
+        "icon": "phone"
+      },
+      "office": {
+        "label": "Office",
+        "icon": "location"
+      }
+    }
+  }
+}

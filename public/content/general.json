@@ -1,0 +1,39 @@
+{
+  "brand": {
+    "name": "Humanforce",
+    "logo": "/images/logo.svg",
+    "logoAlt": "Humanforce Logo"
+  },
+  "navigation": {
+    "main": [
+      { "label": "Features", "href": "#features" },
+      { "label": "Testimonials", "href": "#testimonials" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "cta": {
+      "label": "Book a Demo",
+      "href": "#contact"
+    }
+  },
+  "contact": {
+    "email": "contact@humanforce.com",
+    "phone": "+1 (555) 123-4567",
+    "office": {
+      "address": "Level 10, 90 Arthur St, North Sydney, NSW 2060"
+    }
+  },
+  "social": [
+    {
+      "name": "LinkedIn",
+      "href": "https://www.linkedin.com/company/humanforce-hq/"
+    },
+    {
+      "name": "Facebook",
+      "href": "https://www.facebook.com/HumanforceHQ/"
+    }
+  ],
+  "footer": {
+    "description": "Optimise scheduling, time & attendance, and labour costs with our workforce management platform.",
+    "tagline": "Made with Jack Fan"
+  }
+}
